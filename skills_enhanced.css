@@ -1,0 +1,128 @@
+
+/* Skills Section Styling - Enhanced Version */
+#skills {
+  background-color: #0a192f;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#skills .title {
+  color: #e6f1ff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+}
+
+.skills-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2.5rem;
+  flex: 1;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-category {
+  color: #a8b2d1;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skill-check {
+  width: 24px;
+  height: 24px;
+  background-color: #64ffda;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.skill-check svg {
+  width: 14px;
+  height: 14px;
+  color: #0a192f;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-name {
+  color: #0a192f;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.skill-level {
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+/* Add a subtle hover effect to skill items */
+.skill-item:hover .skill-name {
+  color: #64ffda;
+}
+
+.skill-item:hover .skill-check {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  #skills .title {
+    font-size: 3rem;
+  }
+  
+  .skills-category {
+    font-size: 2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

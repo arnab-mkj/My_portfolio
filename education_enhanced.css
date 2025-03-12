@@ -1,0 +1,196 @@
+
+/* Education Section Styling - Enhanced Version */
+#education {
+  background-color: #0a192f;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add animated gradient background */
+#education::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(125deg, rgba(10, 25, 47, 0.8) 0%, rgba(21, 40, 69, 0.8) 25%, rgba(17, 34, 64, 0.8) 50%, rgba(10, 25, 47, 0.8) 75%, rgba(21, 40, 69, 0.8) 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#education .title {
+  color: #e6f1ff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Add subtle glow to title */
+#education .title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(100, 255, 218, 0), rgba(100, 255, 218, 1), rgba(100, 255, 218, 0));
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.education-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -20px rgba(2, 12, 27, 0.8);
+}
+
+/* Add subtle accent border */
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #64ffda, rgba(100, 255, 218, 0.2));
+}
+
+.education-degree {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.education-focus {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.education-university {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.education-period {
+  font-size: 1.1rem;
+  color: #718096;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.education-coursework {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .education-coursework {
+    grid-template-columns: 1fr;
+  }
+}
+
+.education-coursework li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.education-coursework li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Add subtle hover effect to list items */
+.education-coursework li:hover {
+  color: #0a192f;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Add animated dots in background */
+.animated-dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #64ffda;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  #education .title {
+    font-size: 3rem;
+  }
+  
+  .education-degree {
+    font-size: 2rem;
+  }
+  
+  .education-card {
+    padding: 2rem;
+  }
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(20px) translateX(10px);
+  }
+}

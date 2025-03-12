@@ -548,3 +548,24 @@ footer p {
   color: #333;
   text-align: center;
 }
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  background-color: #0a192f;
+  color: #fff;
+}
+
+section, nav, footer {
+  background-color: rgba(10, 25, 47, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  margin: 2rem 0;
+}

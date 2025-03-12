@@ -7,8 +7,17 @@
     <title>Arnab Mukherjee - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="dark_theme.css" />
+    <link rel="stylesheet" href="education_enhanced.css" />
+    <link rel="stylesheet" href="skills_enhanced.css" />
+    <!-- Add favicon here -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <div id="particles-js"></div>
     <nav id="desktop-nav">
       <div class="logo">Arnab's Portfolio</div>
       <div>
@@ -113,7 +122,6 @@
 
     <!-- Experience Section -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -149,8 +157,11 @@
     </section>
 
     <!-- Education Section -->
+    <!-- Education Section -->
     <section id="education">
-      <p class="section__text__p1">My Academic</p>
+      <div class="animated-dots">
+        <!-- Dots will be added by JavaScript -->
+      </div>
       <h1 class="title">Education</h1>
       <div class="education-card">
         <h2 class="education-degree">Master's in Computational Material Science</h2>
@@ -172,124 +183,213 @@
     </section>
 
     <!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skills">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Deep Learning</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Image Processing</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Signal Processing</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Data Science</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>LLM</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
+      <div class="skills-container">
+        <!-- Technical Skills Card -->
+        <div class="skills-card">
+          <h2 class="skills-category">Technical</h2>
+          <div class="skills-grid">
+            <!-- Machine Learning -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- Deep Learning -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Deep Learning</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- Image Processing -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Image Processing</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- Signal Processing -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Signal Processing</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- Data Science -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Data Science</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- LLM -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">LLM</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- Docker -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- Git -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Git</span>
+                <span class="skill-level">Advanced</span>
+              </div>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>C</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Matlab</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Linux-Bash</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>TensorFlow</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PyTorch</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
+        </div>
+        
+        <!-- Programming Skills Card -->
+        <div class="skills-card">
+          <h2 class="skills-category">Programming</h2>
+          <div class="skills-grid">
+            <!-- Python -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- C++ -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- C -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">C</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- Matlab -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Matlab</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- Linux-Bash -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Linux-Bash</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+            
+            <!-- TensorFlow -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">TensorFlow</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            
+            <!-- PyTorch -->
+            <div class="skill-item">
+              <div class="skill-check">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">PyTorch</span>
+                <span class="skill-level">Advanced</span>
+              </div>
             </div>
           </div>
         </div>
@@ -434,5 +534,12 @@
       <p>Copyright &#169; 2025 Arnab Mukherjee. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js loaded');
+      });
+    </script>
+    <script src="animated_dots.js"></script>
   </body>
 </html>
