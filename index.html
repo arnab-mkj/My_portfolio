@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnab Mukherjee - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Arnab's Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Arnab Mukherjee</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="profile">
+      
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Arnab Mukherjee</h1>
+        <p class="section__text__p2">Computational Science & ML Specialist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Arnab_2-25.jpg')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/arnab-mukherjee-05/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/arnab-mkj'"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Programming & Research</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MSc in Computational Material Science<br />Focus: Mathematics & AI/ML</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Motivated Master's student in Computational Materials Science at TU Bergakademie Freiberg with a strong passion for leveraging advanced computational techniques, machine learning, and image processing to solve real-world challenges. My expertise spans programming in Python, C, C++, and Matlab, with skills in data analysis, signal processing, and developing algorithms for defect detection and image enhancement.
+              <br><br>
+              Currently focusing on courses such as Scientific Computing, High-Performance Computing, Mathematics for Machine Learning, and Finite Element Method.
+              <br><br>
+              I aspire to bridge the gap between computational methods and real-world applications, particularly in domains like material science, semiconductor technology, and microscopy leveraging Machine Learning and Deep Learning methods.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Experience Block 1 -->
+          <div class="details-container">
+            <div class="experience-header">
+              <h2>Wissenschaftliche Hilfskraft (WHK)</h2>
+              <p>ZeHS, TU Bergakademie Freiberg, Germany</p>
+              <p class="date">Jun 2024 - Present</p>
+            </div>
+            <ul class="experience-list">
+              <li>Conducted Scanning Acoustic Microscopy (SAM) to detect semiconductor and ceramic material defects and voids</li>
+              <li>Enhanced defect detection of various thickness of Si wafers with SAFT analysis and Python-based image processing techniques</li>
+              <li>Developed automated defect classification models using deep learning architectures</li>
+            </ul>
+          </div>
+          
+          <!-- Experience Block 2 -->
+          <div class="details-container">
+            <div class="experience-header">
+              <h2>Software Engineer</h2>
+              <p>Larsen & Toubro Infotech Mindtree (LTIM), India</p>
+              <p class="date">Jul 2022 - Sep 2023</p>
+            </div>
+            <ul class="experience-list">
+              <li>Improved individual insurance systems for client companies, enhancing customer experience</li>
+              <li>Managed test metrics, risk logs, and delivered reports for high-value energy domain accounts</li>
+              <li>Drove a USD 5M revenue increase through strategic planning and client engagement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <p class="section__text__p1">My Academic</p>
+      <h1 class="title">Education</h1>
+      <div class="education-card">
+        <h2 class="education-degree">Master's in Computational Material Science</h2>
+        <p class="education-focus">Focus: Mathematics & AI/ML</p>
+        <p class="education-university">TU Bergakademie Freiberg, Germany</p>
+        <p class="education-period">2023 - Present</p>
+        <ul class="education-coursework">
+          <li>Scientific Computing</li>
+          <li>High Performance Computing</li>
+          <li>Mathematics for Machine Learning</li>
+          <li>Materials Mechanics</li>
+          <li>Machine Learning for Material Science</li>
+          <li>Thermodynamics</li>
+          <li>Finite Element Method</li>
+          <li>Discrete Element Method</li>
+          <li>Differential Equations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Image Processing</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Signal Processing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Science</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>LLM</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Matlab</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Linux-Bash</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/genetic_algo.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Chemical Mechanism Reduction Framework</h2>
+            <p>Python, Genetic Algorithms, Machine Learning</p>
+            <p>Developed a framework combining genetic algorithms and machine learning to optimize methane combustion mechanisms using Cantera, achieving significant computational reductions while maintaining accuracy.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arnab-mkj/Chemical_Mechanism_Reduction_GA'">
+                Github
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/llm.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Transformer-Based Language Model</h2>
+            <p>PyTorch, Deep Learning</p>
+            <p>Built a decoder-only GPT model based on the "Attention is all you need" architecture, utilizing self-attention mechanisms, positional encoding, and transformer blocks for NLP tasks. Extended the model into a chatbot capable of handling basic conversational interactions.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arnab-mkj/Bigram_LLM_pre_training'">
+                Github
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/medical_image.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Medical Image Classification</h2>
+            <p>PyTorch, MlFlow, DVC</p>
+            <p>Engineered an end-to-end disease classification system using transfer learning with VGG16 CNN. Integrated MLOps practices such as MlFlow for experiment tracking and DVC for data version control, and deployed on Koyeb.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arnab-mkj/Kidney_Disease_Classification_DL'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/movie_reccommend.jpg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommend System</h2>
+            <p>Data Processing, Streamlit, Python</p>
+            <p>Data fetched from tmdb top 5000 movies. The jupyter notebook is also added for data pre-processing methods.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arnab-mkj/movie_recommend_streamlit'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/chat_app.jpg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat Application</h2>
+            <p>Python, Flask, HTML, CSS, SOCKET I/O </p>
+            <p>A personalized chat application with Socket based communication.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/arnab-mkj/Flask_chat_app'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section id="publications">
+      <p class="section__text__p1">My Research</p>
+      <h1 class="title">Publications</h1>
+      <div class="publications-container">
+        <div class="publication-item">
+          <h3>Low-Velocity Impact Damage on Gas Turbine Blades</h3>
+          <p>Journal of The Institution of Engineers (India)</p>
+          <a href="#" class="publication-link">View Publication</a>
+        </div>
+        <div class="publication-item">
+          <h3>3D-printed Composite Sensors: Advancements, Opportunities, and Prospects</h3>
+          <p>Springer</p>
+          <a href="#" class="publication-link">View Publication</a>
+        </div>
+        <div class="publication-item">
+          <h3>Mechanical Properties of Aluminium Metal Matrix Composites</h3>
+          <p>Springer</p>
+          <a href="#" class="publication-link">View Publication</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:amkjdeutsch1@gmail.com">amkjdeutsch1@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/arnab-mukherjee-05/">LinkedIn</a></p>
+        </div>
+        
+       
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Arnab Mukherjee. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
